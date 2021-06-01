@@ -1,0 +1,20 @@
+void configuration(char[256], int *, int *, int *, char *, char *, char *);
+void count_vecs(char[256], int *, int *);
+void save_vecs(char[256], struct vec *, int, int);
+void random_selection(struct vec *, int, int);
+double manhattan_distance(struct vec, struct vec, int);
+void k_means_plus_plus(struct vec *, int, int, int);
+void Lloyds_assignment(struct vec *, struct vec *, int , int, int);
+void LSH_assignment(struct vec *, struct vec *, struct h_func **h, struct list_node ***HashTables, int *, int, int, int, int, int);
+void PAM(struct vec *, struct vec *, struct h_func **h, struct list_node ***HashTables, int *, int, int, int, int, int, char);
+void PAMean(struct vec *, struct vec *, struct h_func **h, struct list_node ***HashTables, int *, int, int, int, int, int, char);
+void lsh_init(int *, int *, int *, struct h_func ***, struct list_node ****, int **, int, int, int, int);
+void lsh_search(struct vec *, struct vec *, int, struct h_func **, struct list_node ***, int *, int, int, int, int, int, int, int, int);
+void lsh_train(struct vec *, struct h_func **, struct list_node ***, int *, int, int, int, int, int, int, int);
+int modulo_calc(int, int, int);
+void factors(int, int, int, int *);
+unsigned int concat(struct h_func *, int);
+void hash(struct list_node **, int, unsigned int, int);
+void vec_silhouette(struct vec *, int, int, double *);
+void vec_write_output(char[256], struct vec *, struct vec *, int, int, int, double *, int, time_t);
+
